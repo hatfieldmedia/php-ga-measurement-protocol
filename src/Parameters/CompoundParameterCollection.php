@@ -62,7 +62,8 @@ abstract class CompoundParameterCollection implements IteratorAggregate
             $currentParameters = [];
 
             foreach ($compoundParameter->getParameters() as $name => $value) {
-                $currentParameters[$this->name . ($number + 1) . $name] = $value;
+                // $currentParameters[$this->name . ($number + 1) . $name] = $value;
+                $currentParameters[$this->name . "." . $name] = $value;
             }
 
             $parameters = array_merge($parameters, $currentParameters);
