@@ -13,6 +13,7 @@ class EventParams extends CompoundParameter
 {
   protected $parameterNameMapper = [
     '/^search_term/' => 'search_term',
+    '/^user_id/' => 'user_id',
   ];
 
   /**
