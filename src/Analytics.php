@@ -423,6 +423,7 @@ class Analytics
         'EventCategory' => 'Event\\EventCategory',
         'EventLabel' => 'Event\\EventLabel',
         'EventName' => 'Event\\EventName',
+        'EventParams' => 'Event\\EventParams',
         'EventValue' => 'Event\\EventValue',
         'ExceptionDescription' => 'Exceptions\\ExceptionDescription',
         'IsExceptionFatal' => 'Exceptions\\IsExceptionFatal',
