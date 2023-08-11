@@ -12,6 +12,7 @@ use TheIconic\Tracking\GoogleAnalytics\Parameters\CompoundParameter;
 class EventParams extends CompoundParameter
 {
   protected $parameterNameMapper = [
+    '/^answer/' => 'answer',
     '/^classroom_id/' => 'classroom_id',
     '/^date_of_birth/' => 'date_of_birth',
     '/^evaluation_id/' => 'evaluation_id',
@@ -29,6 +30,8 @@ class EventParams extends CompoundParameter
     '/^trophy_id/' => 'trophy_id',
     '/^unit_id/' => 'unit_id',
     '/^user_id/' => 'user_id',
+    '/^video_id/' => 'video_id',
+    '/^question_id/' => 'question_id',
   ];
 
   /**
