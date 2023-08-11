@@ -19,6 +19,7 @@ class EventParams extends CompoundParameter
     '/^first_name/' => 'first_name',
     '/^gender/' => 'gender',
     '/^grade/' => 'grade',
+    '/^lesson_id/' => 'lesson_id',
     '/^location_id/' => 'location_id',
     '/^middle_name/' => 'middle_name',
     '/^last_name/' => 'last_name',
