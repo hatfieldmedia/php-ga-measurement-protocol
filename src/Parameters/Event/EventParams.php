@@ -14,6 +14,7 @@ class EventParams extends CompoundParameter
   protected $parameterNameMapper = [
     '/^classroom_id/' => 'classroom_id',
     '/^date_of_birth/' => 'date_of_birth',
+    '/^evaluation_id/' => 'evaluation_id',
     '/^first_name/' => 'first_name',
     '/^gender/' => 'gender',
     '/^grade/' => 'grade',
