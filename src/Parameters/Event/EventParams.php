@@ -24,6 +24,7 @@ class EventParams extends CompoundParameter
     '/^name/' => 'name',
     '/^race/' => 'race',
     '/^search_term/' => 'search_term',
+    '/^score/' => 'score',
     '/^student_id/' => 'student_id',
     '/^trophy_id/' => 'trophy_id',
     '/^user_id/' => 'user_id',
