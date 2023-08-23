@@ -43,6 +43,10 @@ class PrepareUrl
 
         $this->payloadParameters = array_merge($singlesPost, $compoundsPost);
 
+        if(config('analytics-event-tracking.debug') === true) {
+            $this->payloadParameters['_dbg'] = 1;
+        }
+
         if (!empty($this->cacheBuster)) {
             $this->payloadParameters['z'] = $this->cacheBuster;
         }
