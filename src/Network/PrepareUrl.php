@@ -5,6 +5,7 @@ namespace TheIconic\Tracking\GoogleAnalytics\Network;
 use TheIconic\Tracking\GoogleAnalytics\Parameters\General\CacheBuster;
 use TheIconic\Tracking\GoogleAnalytics\Parameters\SingleParameter;
 use TheIconic\Tracking\GoogleAnalytics\Parameters\CompoundParameterCollection;
+use Illuminate\Support\Facades\Log;
 
 /**
  * Class PrepareUrl
@@ -46,6 +47,7 @@ class PrepareUrl
             $this->payloadParameters['z'] = $this->cacheBuster;
         }
         $query = http_build_query($this->payloadParameters, null, ini_get('arg_separator.output'), PHP_QUERY_RFC3986);
+        Log::channel('eventlog')->info($url . '?' . $query);
         return $onlyQuery ? $query : ($url . '?' . $query);
     }
 
