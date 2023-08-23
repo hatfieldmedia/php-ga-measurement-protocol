@@ -311,7 +311,7 @@ class Analytics
      *
      * @var string
      */
-    protected $endpoint = '://www.google-analytics.com/collect';
+    protected $endpoint = '://analytics.google.com/g/collect';
 
     /**
      * Endpoint to connect to when validating hits.
